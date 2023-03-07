@@ -1,0 +1,26 @@
+{
+    "environment":{"host":"XXX.XXX.XXX.XXX"},      
+    "hierarchy":{
+        "DBC":{"username":"DBC","password":"dbc-password"},
+        "SYSDBA":{"username":"SYSDBA", "password":"password"},
+        "users":{"support_users":[{"username":"cgadmin", "password":"password"}],
+                "business_users":[{"username":"data_engineer", 
+                                   "password":"password", 
+                                   "role":"CR_BusGrpA_STD",
+                                   "compute_group":"CG_BUSGRPA_STD"}, 
+                               {"username":"data_scientist", 
+                                "password":"password", 
+                                "role":"CR_BusGrpA_ANL", 
+                                "compute_group":"CG_BUSGRPA_ANL"}]},
+        "compute_groups":[{"name":"CG_BusGrpA_STD", "type":"STANDARD", "profiles":
+                           [{"name":"CP_BusGrpA_STD_1_SML","type":"STANDARD", "size":"TD_COMPUTE_SMALL", "min":"1", "max":"1"}]}, 
+                          {"name":"CG_BusGrpA_ANL", "type":"ANALYTIC", "profiles":
+                           [{"name":"CP_BusGrpA_ANL_1_SML","type":"ANALYTIC","size":"TD_COMPUTE_SMALL", "min":"1", "max":"1"}]}],
+        "compute_group_roles":[{"name":"CR_BusGrpA_STD", "type":"STANDARD"}, 
+                               {"name":"CR_BusGrpA_ANL", "type":"ANALYTIC"}],
+        "repositories":{"name":"Repositories", 
+                        "perm":"3e11",
+                       "databases":[{"name":"demo", "perm":"1e11", "default_storage":"TD_NDSSTORAGE"}, 
+                                   {"name":"demo_ofs", "perm":"1e11", "default_storage":"TD_OFSSTORAGE"}]}}
+
+}
