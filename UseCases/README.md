@@ -81,8 +81,6 @@ Note that the cells can be selectively edited/executed to load specific data set
 <br>
 **Note 2 - Just below the imports is a function definition - this function converts nPath format to Plotly Sankey, which is nice to visualize the user paths in the notebook.  This cell can be hidden by selecting the cell and Selecting View->Collapse Selected Cell.**
 <br>
-**Note 3 - As of the January-2023 Lake Drop, OAF is unavailable due to a known issue.  Will be available in FEB-2023 drop.**
-<br>
 <hr>
 
 **Uses the "Retail DSE" Data Set to show sessionize/npath to create churn predictors, Sentiment Analysis on comments to create sentiment polarity, then native functions for one hot encoding, VAL transformations, to train and test an open source xgboost model.**
@@ -103,4 +101,40 @@ Note that the cells can be selectively edited/executed to load specific data set
 2. Execute PMMLPredict as a teradataml DataFrame
 3. Evaluate accuracy
 <br>
-**Model execution using OAF Not Available in JAN-2023 Drop**
+**Model scoring using APPLY/OAF**
+1. Connect to existing runtime, or create a new one
+2. Install libraries
+3. Upload model and scoring code
+4. Execute APPLY table operator
+5. Evaluate model accuracr
+<br>
+
+<hr>
+
+### 6. System Scaling and Monitoring Demos (Scaling/Demo...ipynb) ###
+**Python 3.8 Notebooks**
+<br>
+**Note 1 - This demo has a specific Foreign Table definition that is created by running Demo 0 notebook.**
+<br>
+**Note 2 - The system scaling aspect of the demo requires a compute profile with scaling capabilities.  If the user is using the default vars.json, the proper compute group and profile will be created automatically in Environment Setup and Automation.**
+<br>
+<hr>
+<br>
+
+**Demo 1 - Generate Workload.ipynb**
+1. Workload Profile Setup - Define the queries, concurrency, and duration of run
+2. Workload Execution - Submit the workload job for parallel execution
+3. Thread monitoring and control - Monitor the status of the connections, stop them if desired
+<br>
+**Demo 2 - Real-Time Monitoring.ipynb**
+1. Connect to the VantageCloud Lake System - Connect as a user with access to the metrics service and performance monitoring functions
+2. Key Metrics Queries - Queries that monitor active users, Cluster CPU stats, and number of instances
+3. Dasbhboard - Update and plot stats every three seconds
+<br>
+**Demo 3 - System Monitoring Queries.ipynb**
+1. Connect to the VantageCloud Lake System - Connect as a user with access to the metrics service and performance monitoring functions
+2. Current Resource Utilization - The current system utilization
+3. Historic Resource Utilization - Queries showing how to query historical resource usage data
+4. Cluster Events - Queries to analyze what compute resources were available when
+5. Active User and Session Monitoring - For active sessions, queries that monitor users and SQL steps and text. This requires a running workload provided in Demo 1
+6. Query Logging - Database Query Logs

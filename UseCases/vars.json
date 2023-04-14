@@ -13,7 +13,7 @@
                                 "role":"CR_BusGrpA_ANL", 
                                 "compute_group":"CG_BUSGRPA_ANL"}]},
         "compute_groups":[{"name":"CG_BusGrpA_STD", "type":"STANDARD", "profiles":
-                           [{"name":"CP_BusGrpA_STD_1_SML","type":"STANDARD", "size":"TD_COMPUTE_SMALL", "min":"1", "max":"1"}]}, 
+                           [{"name":"CP_BusGrpA_STD_2_XSM","type":"STANDARD", "size":"TD_COMPUTE_XSMALL", "min":"1", "max":"2"}]}, 
                           {"name":"CG_BusGrpA_ANL", "type":"ANALYTIC", "profiles":
                            [{"name":"CP_BusGrpA_ANL_1_SML","type":"ANALYTIC","size":"TD_COMPUTE_SMALL", "min":"1", "max":"1"}]}],
         "compute_group_roles":[{"name":"CR_BusGrpA_STD", "type":"STANDARD"}, 
