@@ -74,7 +74,6 @@ Per the design, **SYSDBA** is the account DBA, **CGADMIN** is Compute Group Admi
 
 <hr>
 
-<!---
 ## 5. Open Analytics Framework (Data_Science_OAF.ipynb) ##
 **Python Notebook**
 (python 3.8)
@@ -94,4 +93,29 @@ Per the design, **SYSDBA** is the account DBA, **CGADMIN** is Compute Group Admi
 3. Train Model
 4. Test Model
 5. Confusion Matrix
--->
+
+<b style = 'font-size:20px;font-family:Arial;color:#E37C4D'>Demos in UseCases Folder</b>
+<p style = 'font-size:18px;font-family:Arial;color:#E37C4D'>See <a href = 'UseCases/README.md'>README</a> for more details</p>
+### 1. Data Loading For Use Cases ###
+<a href = 'UseCases/Setup/Load_Demos_Data.ipynb'>UseCases/Setup/Load_Demos_Data.ipynb</a>
+
+### 2. Native KMeans Clustering ###
+<a href = 'UseCases/Native-KMeans/KMeans_Clustering_Python.ipynb'>UseCases/Native-KMeans/KMeans_Clustering_Python.ipynb</a>
+
+### 3. Native GLM Numeric Regression ###
+<a href = 'UseCases/Native-GLM-Regression/Regression_Python.ipynb'>UseCases/Native-GLM-Regression/Regression_Python.ipynb</a>
+
+### 4. Sentiment Analysis using Native functions ###
+<a href = 'UseCases/Native-Sentiment-Analysis/Sentiment_Analysis_Python.ipynb'>UseCases/Native-Sentiment-Analysis/Sentiment_Analysis_Python.ipynb</a>
+
+### 5. Churn Prediction using Native Data Prep, VAL, model training XGBOOST, scoring with BYOM OR OAF ###
+
+<a href = 'UseCases/Setup/Load_Churn_Demo_Data.ipynb'>UseCases/Setup/Load_Churn_Demo_Data.ipynb</a>
+<br>
+<a href = 'UseCases/Churn-Prediction-OAF/Churn-Prediction-OAF.ipynb'>UseCases/Churn-Prediction-OAF/Churn-Prediction-OAF.ipynb</a>
+
+
+### 6. System Scaling and Monitoring ###
+<a href = 'UseCases/Scaling/Demo 1 - Generate Workload.ipynb'>UseCases/Scaling/Demo 1 - Generate Workload.ipynb</a>
+<a href = 'UseCases/Scaling/Demo 2 - Real-Time Monitoring.ipynb'>UseCases/Scaling/Demo 2 - Real-Time Monitoring.ipynb</a>
+<a href = 'UseCases/Scaling/Demo 3 - System Monitoring Queries.ipynb'>UseCases/Scaling/Demo 3 - System Monitoring Queries.ipynb</a>
