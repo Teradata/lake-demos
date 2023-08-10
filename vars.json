@@ -1,9 +1,10 @@
 {
-    "environment":{"host":"XXX.XXX.XXX.XXX"},      
+    "environment":{"host":"XXX.XXX.XXX.XXX", "bucket":"td-demos-data", "access_key":"", "secret":""},      
     "hierarchy":{
         "DBC":{"username":"DBC","password":"demo_dbc"},
-        "SYSDBA":{"username":"SYSDBA", "password":"password"},
-        "users":{"support_users":[{"username":"cgadmin", "password":"password"}],
+        "SYSDBA":{"username":"SYSDBA", "password":"password", "perm":"8E11", "spool":"8E11"},
+        "users":{"perm":"3E10", "spool":"1E11", 
+                "support_users":[{"username":"cgadmin", "password":"password"}],
                 "business_users":[{"username":"data_engineer", 
                                    "password":"password", 
                                    "role":"CR_BusGrpA_STD",
