@@ -2,31 +2,14 @@
 
 Use Case subfolder.  This contains additional demos built on the parent environment framework.
 
-This folder has its own Setup and data loading scripts, utilizing a copy of vars.json in the parent, and assumes the files match.
+Notebooks in this folder use the environment setup file vars.json in the parent directory.  All Use Cases have their own data loading script which will generally load data from an S3 bucket.  Bucket information and keys are read from the vars.json environment file.
 
 
 <b style = 'font-size:24px;font-family:Arial;color:#E37C4D'>Available Demos List</b>
 
 
 
-### 1. Demos Data Loading Script (Setup/Load_Demos_Data.ipynb) ###
-**Python Notebook**
-Note that the cells can be selectively edited/executed to load specific data sets.
-
-**Required files:**
-1. Load_Demos_Data.ipynb
-2. vars.json in the parent directory (../vars.json)
-3. csv files:
-    - customer_mapping.csv
-    - amazon_reviews.csv
-    - nltk_stopwords.csv
-    - bin_table.csv
-    - housing_full_partition.csv
-    - UK_Retail_Data.csv
-
-<hr>
-
-### 2. Native KMeans Clustering (Native-KMeans/KMeans_Clustering_Python.ipynb) ###
+### 1. Native KMeans Clustering (Native-KMeans/KMeans_Clustering_Python.ipynb) ###
 **Python 3.8 Notebook**
 <br>
 **Creates and evaluates a customer segmentation model using a retail data set, with feature engineering, and "operational" feature engineering using fit/transform and fit/columntransformer.**
@@ -39,7 +22,7 @@ Note that the cells can be selectively edited/executed to load specific data set
 
 <hr>
 
-### 3. Native GLM Numeric Regression (Native-GLM-Regression/Regression_Python.ipynb) ###
+### 2. Native GLM Numeric Regression (Native-GLM-Regression/Regression_Python.ipynb) ###
 **Python 3.8 Notebook**
 <br>
 **Creates and scale a numeric-only feature set using historic housing price data to predict sales price**
@@ -51,7 +34,7 @@ Note that the cells can be selectively edited/executed to load specific data set
 
 <hr>
 
-### 4. Sentiment Analysis using Native functions (Native-Sentiment-Analysis/Sentiment_Analysis_Python.ipynb) ###
+### 3. Sentiment Analysis using Native functions (Native-Sentiment-Analysis/Sentiment_Analysis_Python.ipynb) ###
 **Python 3.8 Notebook**
 <br>
 **Uses an Amazon Fine Foods data set to generate a Sentiment score for reviews, and then compares the generated sentiment to the "star" rating the reviewer gave the product**
@@ -76,8 +59,6 @@ Note that the cells can be selectively edited/executed to load specific data set
 
 ### 5. Churn Prediction using Native Data Prep, VAL, model training XGBOOST, scoring with BYOM OR OAF (Churn-Prediction-OAF/Churn-Prediction-OAF.ipynb) ###
 **Python 3.8 Notebook**
-<br>
-**Note 1 - This demo has a specific Data Loading Notebook - execute Setup/Load_Churn_Demo_Data.ipynb first!**
 <br>
 **Note 2 - Just below the imports is a function definition - this function converts nPath format to Plotly Sankey, which is nice to visualize the user paths in the notebook.  This cell can be hidden by selecting the cell and Selecting View->Collapse Selected Cell.**
 <br>
@@ -114,8 +95,6 @@ Note that the cells can be selectively edited/executed to load specific data set
 ### 6. System Scaling and Monitoring Demos (Scaling/Demo...ipynb) ###
 **Python 3.8 Notebooks**
 <br>
-**Note 1 - This demo has a specific Foreign Table definition that is created by running Demo 0 notebook.**
-<br>
 **Note 2 - The system scaling aspect of the demo requires a compute profile with scaling capabilities.  If the user is using the default vars.json, the proper compute group and profile will be created automatically in Environment Setup and Automation.**
 <br>
 <hr>
@@ -138,3 +117,15 @@ Note that the cells can be selectively edited/executed to load specific data set
 4. Cluster Events - Queries to analyze what compute resources were available when
 5. Active User and Session Monitoring - For active sessions, queries that monitor users and SQL steps and text. This requires a running workload provided in Demo 1
 6. Query Logging - Database Query Logs
+
+### 7. Proximity to Climate Risk (Proximity-To-Climate-Risk/Proximity...ipynb) ###
+**Python 3.8 Notebooks**
+<br>
+<hr>
+
+**This demonstration notebook will illustrate how analysts can leverage location and proximity information at scale to analyze which specific addresses are within a certain proximity to flooding.**
+
+1. Uses flood zone data from the 2023 flooding in North New Zealand as a basis for calculating the risk of over 6 million individual addresses
+2. Shows common open-source and client-side approaches to Geospatial Analysis
+3. Contrasts the same capabilities in-database to run at extreme scale and performance
+4. Offers interactive map-based visualizations

@@ -14,7 +14,7 @@ Purpose is to store all the public lake demos here in a single project where the
 
 **Two files required:**
 1. Environment variables file vars.json
-2. Demo_Environment_Setup_Automation.ipynb
+2. 0_Demo_Environment_Setup_Automation.ipynb
 
 **Alternate - use Apache Airflow**
 1. Upload Demo_Setup_Airflow_Python.py to Airflow
@@ -41,14 +41,14 @@ Per the design, **SYSDBA** is the account DBA, **CGADMIN** is Compute Group Admi
 
 <hr>
 
-## 2. Base Data Loading (Demo_Setup_Base_Data.ipynb) ##
+## 2. Base Data Loading (1_Demo_Setup_Base_Data.ipynb) ##
 **Python Notebook**
 <br>
 **Purpose is to load minimal data to the local Lake system to run the base demo notebooks**
 1. Log in as SYSDBA
-2. Loads two dimension tables to NDS storage from S3
-    - demo.Customer_EBS
-    - demo.Accounts_Mapping_EBS
+2. Loads two dimension tables to BFS storage from S3
+    - demo.Customer_BFS
+    - demo.Accounts_Mapping_BFS
 3. Loads one fact table to OFS Storage from S3
     - demo_OFS.Txn_History
     
@@ -67,7 +67,7 @@ Per the design, **SYSDBA** is the account DBA, **CGADMIN** is Compute Group Admi
 **Vantage SQL Kernel**
 1. Create OFS Table from S3 "CashApp" transactions
 2. Create Foreign Table from S3 "Banking History"
-3. Review Tables - Dimensions in EBS, CashApp in OFS, Banking History in S3
+3. Review Tables - Dimensions in BFS, CashApp in OFS, Banking History in S3
 4. Execute Joins and Analytics:
     - Identify Customers who have experienced Fraud
     - Show the victim's full behavioral path through their Banking relationship
@@ -77,8 +77,7 @@ Per the design, **SYSDBA** is the account DBA, **CGADMIN** is Compute Group Admi
 ## 5. Open Analytics Framework (Data_Science_OAF.ipynb) ##
 **Python Notebook**
 (python 3.8)
-**Step 0 - set up python packages and pftoken JWT generator**
-1. Log in, get credentials and REST endpoint
+1. Credentials and UES URI inherited from vars.json
 2. Create custom container - install libraries and versions
 3. Upload model and scoring script
 4. Execute Feature Engineering - pass it to scoring.
@@ -95,27 +94,29 @@ Per the design, **SYSDBA** is the account DBA, **CGADMIN** is Compute Group Admi
 5. Confusion Matrix
 
 <b style = 'font-size:20px;font-family:Arial;color:#E37C4D'>Demos in UseCases Folder</b>
-<p style = 'font-size:18px;font-family:Arial;color:#E37C4D'>See <a href = 'UseCases/README.md'>README</a> for more details</p>
-### 1. Data Loading For Use Cases ###
-<a href = 'UseCases/Setup/Load_Demos_Data.ipynb'>UseCases/Setup/Load_Demos_Data.ipynb</a>
+<p style = 'font-size:18px;font-family:Arial'>Each Use Case has its own data loading notebook.  Typically, the data is loaded from an S3 bucket; bucket name and any credentials are inherited from vars.json file.</p>
+<p style = 'font-size:18px;font-family:Arial'>See <a href = 'UseCases/README.md'>README</a> for more details</p>
 
-### 2. Native KMeans Clustering ###
+
+### 1. Native KMeans Clustering ###
 <a href = 'UseCases/Native-KMeans/KMeans_Clustering_Python.ipynb'>UseCases/Native-KMeans/KMeans_Clustering_Python.ipynb</a>
 
-### 3. Native GLM Numeric Regression ###
+### 2. Native GLM Numeric Regression ###
 <a href = 'UseCases/Native-GLM-Regression/Regression_Python.ipynb'>UseCases/Native-GLM-Regression/Regression_Python.ipynb</a>
 
-### 4. Sentiment Analysis using Native functions ###
+### 3. Sentiment Analysis using Native functions ###
 <a href = 'UseCases/Native-Sentiment-Analysis/Sentiment_Analysis_Python.ipynb'>UseCases/Native-Sentiment-Analysis/Sentiment_Analysis_Python.ipynb</a>
 
-### 5. Churn Prediction using Native Data Prep, VAL, model training XGBOOST, scoring with BYOM OR OAF ###
-
-<a href = 'UseCases/Setup/Load_Churn_Demo_Data.ipynb'>UseCases/Setup/Load_Churn_Demo_Data.ipynb</a>
-<br>
+### 4. Churn Prediction using Native Data Prep, VAL, model training XGBOOST, scoring with BYOM OR OAF ###
 <a href = 'UseCases/Churn-Prediction-OAF/Churn-Prediction-OAF.ipynb'>UseCases/Churn-Prediction-OAF/Churn-Prediction-OAF.ipynb</a>
 
 
-### 6. System Scaling and Monitoring ###
+### 5. System Scaling and Monitoring ###
 <a href = 'UseCases/Scaling/Demo 1 - Generate Workload.ipynb'>UseCases/Scaling/Demo 1 - Generate Workload.ipynb</a>
+<br>
 <a href = 'UseCases/Scaling/Demo 2 - Real-Time Monitoring.ipynb'>UseCases/Scaling/Demo 2 - Real-Time Monitoring.ipynb</a>
+<br>
 <a href = 'UseCases/Scaling/Demo 3 - System Monitoring Queries.ipynb'>UseCases/Scaling/Demo 3 - System Monitoring Queries.ipynb</a>
+
+### 6. Proximity to Climate Risk/Geospatial Analysis ###
+<a href = 'UseCases/Proximity-To-Climate-Risk/Proximity_To_Climate_Risk.ipynb'>UseCases/Proximity-To-Climate-Risk/Proximity_To_Climate_Risk.ipynb</a>
