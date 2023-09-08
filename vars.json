@@ -1,5 +1,9 @@
 {
-    "environment":{"host":"XXX.XXX.XXX.XXX", "bucket":"td-demos-data", "access_key":"", "secret":""},      
+    "environment":{"host":"XXX.XXX.XXX.XXX", 
+                   "UES_URI":"", 
+                   "bucket":"", 
+                   "access_key":"", 
+                   "secret":""},      
     "hierarchy":{
         "DBC":{"username":"DBC","password":"demo_dbc"},
         "SYSDBA":{"username":"SYSDBA", "password":"password", "perm":"8E11", "spool":"8E11"},
