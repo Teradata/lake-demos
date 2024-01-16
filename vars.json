@@ -1,9 +1,7 @@
 {
     "environment":{"host":"XXX.XXX.XXX.XXX", 
                    "UES_URI":"", 
-                   "bucket":"", 
-                   "access_key":"", 
-                   "secret":""},      
+                   "bucket":""},      
     "hierarchy":{
         "DBC":{"username":"DBC","password":"demo_dbc"},
         "SYSDBA":{"username":"SYSDBA", "password":"password", "perm":"8E11", "spool":"8E11"},
