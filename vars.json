@@ -1,7 +1,7 @@
 {
     "environment":{"host":"XXX.XXX.XXX.XXX", 
                    "UES_URI":"", 
-                   "bucket":""},      
+                   "bucket":"vantagecloud-lake-demo-data"},      
     "hierarchy":{
         "DBC":{"username":"DBC","password":"demo_dbc"},
         "SYSDBA":{"username":"SYSDBA", "password":"password", "perm":"8E11", "spool":"8E11"},
