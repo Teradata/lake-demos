@@ -108,7 +108,7 @@ Notebooks in this folder use the environment setup file vars.json in the parent 
 **Demo 2 - Real-Time Monitoring.ipynb**
 1. Connect to the VantageCloud Lake System - Connect as a user with access to the metrics service and performance monitoring functions
 2. Key Metrics Queries - Queries that monitor active users, Cluster CPU stats, and number of instances
-3. Dasbhboard - Update and plot stats every three seconds
+3. Dashboard - Update and plot stats every three seconds
 <br>
 **Demo 3 - System Monitoring Queries.ipynb**
 1. Connect to the VantageCloud Lake System - Connect as a user with access to the metrics service and performance monitoring functions
@@ -129,3 +129,14 @@ Notebooks in this folder use the environment setup file vars.json in the parent 
 2. Shows common open-source and client-side approaches to Geospatial Analysis
 3. Contrasts the same capabilities in-database to run at extreme scale and performance
 4. Offers interactive map-based visualizations
+
+### 8. Using Vector Embeddings for Customer Segmentation (UseCases/Vector-Embeddings-Segmentation/Segmentation...ipynb)
+**Python 3.8 Notebook**
+<br>
+<hr>
+
+**This demonstration notebook illustrates how vector embedding can be used to create predictive features - in this case an optimum customer segmentation based on text similarity in customer reviews.**
+
+1. Uses the native TD_WordEmbeddings function to vectorize retail customer comments based on the GloVe 6B 50d word vector model
+2. Passes this vector table to multiple iterations of the kmeans function
+3. Displays the series of WCSS values in order to identify the "elbow" point which would indicate an ideal number of segments

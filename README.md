@@ -120,3 +120,6 @@ Per the design, **SYSDBA** is the account DBA, **CGADMIN** is Compute Group Admi
 
 ### 6. Proximity to Climate Risk/Geospatial Analysis ###
 <a href = 'UseCases/Proximity-To-Climate-Risk/Proximity_To_Climate_Risk.ipynb'>UseCases/Proximity-To-Climate-Risk/Proximity_To_Climate_Risk.ipynb</a>
+
+### 7. Vector Embeddings for Customer Segmentation ###
+<a href = 'UseCases/Vector-Embeddings-Segmentation/Segmentation_With_Vector_Embedding.ipynb'>UseCases/Vector-Embeddings-Segmentation/Segmentation_With_Vector_Embedding.ipynb</a>
