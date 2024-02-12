@@ -24,6 +24,9 @@
         "repositories":{"name":"Repositories", 
                         "perm":"3e11",
                        "databases":[{"name":"demo", "perm":"1e11", "default_storage":"TD_NDSSTORAGE"}, 
-                                   {"name":"demo_ofs", "perm":"1e11", "default_storage":"TD_OFSSTORAGE"}]}}
+                                   {"name":"demo_ofs", "perm":"1e11", "default_storage":"TD_OFSSTORAGE"}],
+                       "iam_authorizations":[{"name":"demo_iam_auth", 
+                                              "arn":"XXX", 
+                                              "externalid":"XXX"}]}}
 
 }
