@@ -5,20 +5,23 @@ VantageCloud Lake Demos Public Repository.
 Purpose is to store all the public lake demos here in a single project where the community can collaborate. 
 
 
-<b style = 'font-size:24px;font-family:Arial;color:#E37C4D'>Available Demos List</b>
+<b style = 'font-size:24px;font-family:Arial;color:#00233C'>Available Demos List</b>
 
 
 
 ### 1. Environment Setup Automation (Demo_Environment_Setup_Automation.ipynb) ###
 **Python Notebook**
 
-**Two files required:**
+**Three files required:**
 1. Environment variables file vars.json
 2. 0_Demo_Environment_Setup_Automation.ipynb
+3. 1_Load_Base_Demo_Data.ipynb
 
 **Alternate - use Apache Airflow**
 1. Upload Demo_Setup_Airflow_Python.py to Airflow
 2. Edit vars.json and upload as "Variables".
+3. Execute the DAG
+4. Run 1_Load_Base_Demo_Data.ipynb
 
 ### Environment Setup Checklist ###
 
@@ -71,6 +74,7 @@ Per the design, **SYSDBA** is the account DBA, **CGADMIN** is Compute Group Admi
 4. Execute Joins and Analytics:
     - Identify Customers who have experienced Fraud
     - Show the victim's full behavioral path through their Banking relationship
+5. Execute Joins across the Query Fabric (QueryGrid)
 
 <hr>
 
@@ -93,9 +97,20 @@ Per the design, **SYSDBA** is the account DBA, **CGADMIN** is Compute Group Admi
 4. Test Model
 5. Confusion Matrix
 
-<b style = 'font-size:20px;font-family:Arial;color:#E37C4D'>Demos in UseCases Folder</b>
-<p style = 'font-size:18px;font-family:Arial'>Each Use Case has its own data loading notebook.  Typically, the data is loaded from an S3 bucket; bucket name and any credentials are inherited from vars.json file.</p>
-<p style = 'font-size:18px;font-family:Arial'>See <a href = 'UseCases/README.md'>README</a> for more details</p>
+<hr>
+
+<b style = 'font-size:20px;font-family:Arial;color:#00233C'>VantageCloud Lake Fundamentals</b>
+<p style = 'font-size:18px;font-family:Arial;color:#00233C'>Notebooks illustrating the feature/function basics</p>
+<p style = 'font-size:18px;font-family:Arial;color:#00233C'>See <a href = 'Fundamentals/README.md'>README</a> for more details</p>
+
+### 1. Native Object Store ###
+<a href = 'Fundamentals/Native-Object-Store/NOS_Fundamentals_SQL.ipynb'>Fundamentals/Native-Object-Store/NOS_Fundamentals_SQL.ipynb</a>
+
+<hr>
+
+<b style = 'font-size:20px;font-family:Arial;color:#00233C'>Demos in UseCases Folder</b>
+<p style = 'font-size:18px;font-family:Arial;color:#00233C'>Each Use Case has its own data loading notebook.  Typically, the data is loaded from an S3 bucket; bucket name and any credentials are inherited from vars.json file.</p>
+<p style = 'font-size:18px;font-family:Arial;color:#00233C'>See <a href = 'UseCases/README.md'>README</a> for more details</p>
 
 
 ### 1. Native KMeans Clustering ###
