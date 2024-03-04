@@ -19,14 +19,12 @@
                            [{"name":"CP_BusGrpA_STD_2_XSM","type":"STANDARD", "size":"TD_COMPUTE_XSMALL", "min":"1", "max":"2"}]}, 
                           {"name":"CG_BusGrpA_ANL", "type":"ANALYTIC", "profiles":
                            [{"name":"CP_BusGrpA_ANL_1_SML","type":"ANALYTIC","size":"TD_COMPUTE_SMALL", "min":"1", "max":"1"}]}],
-        "compute_group_roles":[{"name":"CR_BusGrpA_STD", "type":"STANDARD"}, 
-                               {"name":"CR_BusGrpA_ANL", "type":"ANALYTIC"}],
+        "compute_group_roles":[{"name":"CR_BusGrpA_STD", "type":"STANDARD", "compute_group":"CG_BusGrpA_STD"}, 
+                               {"name":"CR_BusGrpA_ANL", "type":"ANALYTIC", "compute_group":"CG_BusGrpA_ANL"}],
         "repositories":{"name":"Repositories", 
                         "perm":"3e11",
                        "databases":[{"name":"demo", "perm":"1e11", "default_storage":"TD_NDSSTORAGE"}, 
                                    {"name":"demo_ofs", "perm":"1e11", "default_storage":"TD_OFSSTORAGE"}],
-                       "iam_authorizations":[{"name":"demo_iam_auth", 
-                                              "arn":"XXX", 
-                                              "externalid":"XXX"}]}}
+                       "iam_authorizations":[]}}
 
 }
