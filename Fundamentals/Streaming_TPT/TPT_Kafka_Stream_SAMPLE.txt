@@ -1,0 +1,41 @@
+USING CHARACTER SET UTF8
+DEFINE JOB IMPORT_TO_TERADATA
+    DESCRIPTION 'Import data to Teradata from Kafka Server'
+
+    (
+    SET LoadTargetTable = 'demo.kafka_retail_events'
+    SET StreamTdpId         = '<db_host>'
+    SET StreamUserName      = '<db_user>'
+    SET StreamUserPassword  = '<db_password>'
+    SET StreamDropErrorTable = 'Yes'
+    /* The following settings are used to reduce the consumption rate for the demo */
+    SET StreamPeriodicity = 60
+    SET StreamRate = 60
+    SET StreamPack = 1
+
+        STEP IMPORT_THE_DATA
+        (
+            APPLY $INSERT @LoadTargetTable TO OPERATOR ($STREAM)
+            SELECT * FROM OPERATOR ($FILE_READER()
+                ATTR
+                (
+                    PrivateLogName = 'KAFKA_TestTopic_log',
+                    AccessModuleName = 'libkafkaaxsmod.so',
+                    AccessModuleInitStr = '-MODE C
+                                           -TOPIC demotopic
+                                           -BROKERS <broker>:<port>
+                                           -BLOCKSIZE 30000
+                                           -PARTITION 0
+                                           -SHOWP y
+                                           -TRACELEVEL 3
+                                           -CONFIG compression.codec=none
+                                           -CONFIG topic.auto.offset.reset=latest
+                                           -alf Y
+                                          ',
+                     TextDelimiter = '|',
+                     Format = 'Delimited'
+
+                )
+            );
+        );
+    );
