@@ -24,13 +24,13 @@ def check_and_connect(host, username, password, compute_group):
             eng = get_context()
             execute_sql(f'SET SESSION COMPUTE GROUP {compute_group};')
         except Exception as e:
-            if 'Failure sending Start Request message' in str(e):
+            if 'Failure sending Start Request message' in str(e) or 'Failure sending Logoff Request message' in str(e):
                 try:
                     eng = create_context(host=host, username=username, password=password)
                     execute_sql(f'SET SESSION COMPUTE GROUP {compute_group};')
                     pass
                 except Exception as i:
-                    if 'Failure sending Logoff Request message' in str(i): #need to force reconnect
+                    if 'Failure sending Logoff Request message' in str(i) or 'Failure sending Start Request message' in str(i): #need to force reconnect
                         eng = create_context(host=host, username=username, password=password)
                         execute_sql(f'SET SESSION COMPUTE GROUP {compute_group};')
                         pass
