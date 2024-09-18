@@ -6,6 +6,7 @@ import teradatasql
 from teradataml import *
 import getpass
 import datetime
+import time
 import pandas as pd
 import concurrent.futures
 from time import sleep
