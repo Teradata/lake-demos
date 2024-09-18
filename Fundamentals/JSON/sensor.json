@@ -1,0 +1,103 @@
+[
+    {
+        "timestamp": "2024-04-17T13:47:52Z",
+        "sensor_id": "sensor_1",
+        "temperature": 25.5,
+        "humidity": 60.2,
+        "location": {
+            "latitude": 47.6062,
+            "longitude": -122.3321
+        }
+    },
+    {
+        "timestamp": "2024-04-17T13:48:10Z",
+        "sensor_id": "sensor_2",
+        "temperature": 23.8,
+        "humidity": 58.7,
+        "location": {
+            "latitude": 47.6097,
+            "longitude": -122.3331
+        }
+    },
+    {
+        "timestamp": "2024-04-17T13:49:30Z",
+        "sensor_id": "sensor_3",
+        "temperature": 24.2,
+        "humidity": 59.5,
+        "location": {
+            "latitude": 47.6115,
+            "longitude": -122.3345
+        }
+    },
+    {
+        "timestamp": "2024-04-17T13:50:15Z",
+        "sensor_id": "sensor_4",
+        "temperature": 24.9,
+        "humidity": 61.0,
+        "location": {
+            "latitude": 47.6128,
+            "longitude": -122.3352
+        }
+    },
+    {
+        "timestamp": "2024-04-17T13:51:20Z",
+        "sensor_id": "sensor_5",
+        "temperature": 25.8,
+        "humidity": 60.8,
+        "location": {
+            "latitude": 47.6143,
+            "longitude": -122.3360
+        }
+    },
+    {
+        "timestamp": "2024-04-17T13:52:45Z",
+        "sensor_id": "sensor_6",
+        "temperature": 26.3,
+        "humidity": 59.3,
+        "location": {
+            "latitude": 47.6159,
+            "longitude": -122.3375
+        }
+    },
+    {
+        "timestamp": "2024-04-17T13:53:55Z",
+        "sensor_id": "sensor_7",
+        "temperature": 25.1,
+        "humidity": 58.0,
+        "location": {
+            "latitude": 47.6174,
+            "longitude": -122.3388
+        }
+    },
+    {
+        "timestamp": "2024-04-17T13:54:30Z",
+        "sensor_id": "sensor_8",
+        "temperature": 24.7,
+        "humidity": 57.2,
+        "location": {
+            "latitude": 47.6187,
+            "longitude": -122.3395
+        }
+    },
+    {
+        "timestamp": "2024-04-17T13:55:10Z",
+        "sensor_id": "sensor_9",
+        "temperature": 24.0,
+        "humidity": 56.5,
+        "location": {
+            "latitude": 47.6201,
+            "longitude": -122.3402
+        }
+    },
+    {
+        "timestamp": "2024-04-17T13:56:25Z",
+        "sensor_id": "sensor_10",
+        "temperature": 23.5,
+        "humidity": 55.8,
+        "location": {
+            "latitude": 47.6215,
+            "longitude": -122.3410
+        }
+    }
+]
+

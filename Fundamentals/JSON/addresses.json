@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Alice",
+        "age": 30,
+        "hobbies": ["reading", "painting"],
+        "address": {
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "CA",
+            "zip": "98765"
+        }
+    },
+    {
+        "name": "Bob",
+        "age": 25,
+        "hobbies": ["swimming", "gardening"],
+        "address": {
+            "street": "456 Elm St",
+            "city": "Another City",
+            "state": "NY",
+            "zip": "54321"
+        }
+    },
+    {
+        "name": "Charlie",
+        "age": 22,
+        "hobbies": ["cooking", "traveling"],
+        "address": {
+            "street": "789 Oak Ave",
+            "city": "Yet Another City",
+            "state": "TX",
+            "zip": "12345"
+        }
+    },
+    {
+        "name": "David",
+        "age": 28,
+        "hobbies": ["cycling", "photography"],
+        "address": {
+            "street": "101 Pine Rd",
+            "city": "Final City",
+            "state": "WA",
+            "zip": "67890"
+        }
+    },
+    {
+        "name": "Eve",
+        "age": 35,
+        "hobbies": ["yoga", "meditation"],
+        "address": {
+            "street": "222 Cedar Ln",
+            "city": "Last City",
+            "state": "OR",
+            "zip": "54321"
+        }
+    },
+    {
+        "name": "Frank",
+        "age": 40,
+        "hobbies": ["fishing", "camping"],
+        "address": {
+            "street": "333 Maple Dr",
+            "city": "Final City",
+            "state": "WA",
+            "zip": "67890"
+        }
+    },
+    {
+        "name": "Grace",
+        "age": 27,
+        "hobbies": ["dancing", "singing"],
+        "address": {
+            "street": "444 Birch Ave",
+            "city": "Yet Another City",
+            "state": "TX",
+            "zip": "12345"
+        }
+    },
+    {
+        "name": "Henry",
+        "age": 32,
+        "hobbies": ["golf", "tennis"],
+        "address": {
+            "street": "555 Willow Rd",
+            "city": "Another City",
+            "state": "NY",
+            "zip": "54321"
+        }
+    },
+    {
+        "name": "Isabel",
+        "age": 29,
+        "hobbies": ["hiking", "skiing"],
+        "address": {
+            "street": "666 Oak Ave",
+            "city": "Anytown",
+            "state": "CA",
+            "zip": "98765"
+        }
+    },
+    {
+        "name": "Jack",
+        "age": 24,
+        "hobbies": ["reading", "playing guitar"],
+        "address": {
+            "street": "777 Elm St",
+            "city": "Another City",
+            "state": "NY",
+            "zip": "54321"
+        }
+    }
+]
