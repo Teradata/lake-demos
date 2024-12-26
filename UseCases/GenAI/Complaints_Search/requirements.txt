@@ -1,7 +1,7 @@
 numpy
 pandas
 dill
-teradataml
+teradataml>=20.0.0.2
 sentence-transformers 
 torch 
 transformers 
