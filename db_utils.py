@@ -5,6 +5,33 @@ import pandas as pd
 from time import sleep
 from IPython.display import clear_output , display as ipydisplay
 
+def check_and_connect(host, username, password, compute_group):
+    # check for existing connection
+    if not get_context():
+        try:
+            eng = create_context(host=host, username=username, password=password)
+            execute_sql(f'SET SESSION COMPUTE GROUP {compute_group};')
+        except Exception as e:
+            if 'Failure sending Start Request message' in str(e):
+                eng = create_context(host=host, username=username, password=password)
+                execute_sql(f'SET SESSION COMPUTE GROUP {compute_group};')
+                pass
+            else:
+                raise # OperationalError from None
+    else: #check for existing connection
+        try:
+            eng = create_context(host=host, username=username, password=password)
+            execute_sql(f'SET SESSION COMPUTE GROUP {compute_group};')
+        except Exception as e:
+            if 'Failure sending Start Request message' in str(e):
+                eng = create_context(host=host, username=username, password=password)
+                execute_sql(f'SET SESSION COMPUTE GROUP {compute_group};')
+                pass
+            else:
+                raise
+    
+    return eng
+
 def check_cluster_start(compute_group):
     try:
         df_status = DataFrame.from_query(f'''SELECT * FROM DBC.ComputeStatusV WHERE ComputeGroupName = '{compute_group}';''').to_pandas()
