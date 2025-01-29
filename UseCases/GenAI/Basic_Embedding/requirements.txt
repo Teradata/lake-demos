@@ -1,0 +1,11 @@
+numpy
+pandas
+dill
+teradataml
+sentence-transformers 
+torch 
+transformers 
+sentencepiece
+itables
+wordcloud
+ipywidgets
