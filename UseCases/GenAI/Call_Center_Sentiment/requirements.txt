@@ -1,0 +1,13 @@
+numpy==1.26.4
+pandas
+dill
+teradataml>=20.0.0.2
+sentence-transformers 
+torch 
+transformers 
+sentencepiece
+itables
+wordcloud
+ipywidgets
+pillow
+plotly
