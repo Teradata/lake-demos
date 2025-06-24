@@ -1,0 +1,61 @@
+patientid,first_name,last_name,post_code,Category,Transcript,Call_ID,Customer_Satisfaction_Rating
+1,Elizabeth,Jones,10005,Long Wait Times,How much longer will I have to wait for my results?,356752,1
+2,Jennifer,Brown,10006,Long Wait Times,Can you explain why there's always a delay in this office?,517530,4
+3,John,Smith,10006,Long Wait Times,"Every time I come here, the appointments never start on time.",738186,5
+4,Patricia,Williams,10007,Long Wait Times,This wait time is unacceptable.,384241,1
+5,James,Jones,10005,Long Wait Times,I've been waiting for over an hour to see the doctor.,470361,5
+6,Patricia,Miller,10007,Long Wait Times,I had to wait two weeks for an appointment and now another hour here.,278202,1
+7,John,Johnson,10008,Long Wait Times,I've spent my whole afternoon waiting for this.,620447,2
+8,Mary,Moore,10001,Long Wait Times,Why is there such a long delay for lab tests?,608336,1
+9,Patricia,Johnson,10008,Long Wait Times,"My appointment was scheduled for 10 AM, and it's already 11:30.",561027,4
+10,Patricia,Miller,10001,Long Wait Times,Why do my test results always take so long?,714768,3
+11,William,Wilson,10002,Scheduling Difficulties,It's impossible to find an available appointment slot.,123132,3
+12,Elizabeth,Jones,10010,Scheduling Difficulties,I keep getting errors when trying to book an appointment.,227483,4
+13,Patricia,Wilson,10009,Scheduling Difficulties,Why is it so difficult to get an appointment sooner?,233416,1
+14,Patricia,Miller,10009,Scheduling Difficulties,Your online booking isn't user-friendly at all.,838140,2
+15,John,Taylor,10001,Scheduling Difficulties,I can't reach anyone to schedule my next visit.,863456,2
+16,Mary,Jones,10004,Scheduling Difficulties,No one called me back to confirm my scheduled appointment.,544515,1
+17,Mary,Miller,10004,Scheduling Difficulties,Your system won't let me cancel or reschedule my visit.,638932,3
+18,Patricia,Brown,10005,Scheduling Difficulties,I'm having trouble scheduling my appointment online.,579766,4
+19,Jennifer,Brown,10008,Scheduling Difficulties,I requested an appointment online and never got confirmation.,850185,5
+20,Jennifer,Taylor,10003,Scheduling Difficulties,Why do I have to wait so long for a specialist?,142723,5
+21,Patricia,Smith,10009,Billing Issues,"My insurance says they've paid, but you're billing me again.",225838,5
+22,John,Miller,10004,Billing Issues,I don't understand this bill; it's not clear at all.,962713,4
+23,Patricia,Williams,10010,Billing Issues,Why does resolving billing issues take so long?,777753,2
+24,John,Taylor,10008,Billing Issues,Why wasn't I informed about these charges beforehand?,561118,1
+25,Linda,Miller,10006,Billing Issues,I'm still receiving bills even though I already paid.,986253,5
+26,Linda,Moore,10008,Billing Issues,There's an incorrect charge on my statement.,346731,3
+27,Elizabeth,Smith,10001,Billing Issues,I've been incorrectly billed for services I didn't receive.,758040,4
+28,William,Williams,10008,Billing Issues,Can someone explain these extra fees on my bill?,234877,4
+29,Patricia,Moore,10006,Billing Issues,Your billing department isn't responding to my calls.,757209,4
+30,John,Wilson,10003,Billing Issues,Why am I being charged twice for the same procedure?,105729,4
+31,Robert,Miller,10003,Rude or Unprofessional Staff,I received sarcastic responses when asking for help.,576321,3
+32,Jennifer,Smith,10002,Rude or Unprofessional Staff,Why are your employees so impolite?,517457,2
+33,Elizabeth,Jones,10006,Rude or Unprofessional Staff,The doctor didn't even greet me properly.,787785,1
+34,Michael,Moore,10008,Rude or Unprofessional Staff,Your staff was extremely unprofessional during my last visit.,962278,2
+35,John,Jones,10003,Rude or Unprofessional Staff,The receptionist was very rude to me this morning.,606801,1
+36,Elizabeth,Miller,10008,Rude or Unprofessional Staff,Staff ignored my requests repeatedly.,401756,3
+37,Patricia,Taylor,10003,Rude or Unprofessional Staff,I overheard staff gossiping about patients.,429340,5
+38,James,Brown,10004,Rude or Unprofessional Staff,No one seems to care about treating patients kindly here.,652300,4
+39,Patricia,Jones,10009,Rude or Unprofessional Staff,I felt disrespected by the nurse's attitude.,338876,1
+40,William,Miller,10002,Rude or Unprofessional Staff,The technician was dismissive and impatient.,423976,5
+41,John,Johnson,10008,Feeling Unheard,Why didn't anyone address the concerns I mentioned?,116979,3
+42,Michael,Jones,10010,Feeling Unheard,My doctor dismissed my concerns outright.,391861,3
+43,Linda,Johnson,10006,Feeling Unheard,Why won't my doctor take my condition seriously?,958465,2
+44,Michael,Williams,10007,Feeling Unheard,It seems like no one listens to me at this clinic.,332251,1
+45,Mary,Smith,10009,Feeling Unheard,My complaints have consistently been overlooked.,423283,4
+46,Elizabeth,Jones,10001,Feeling Unheard,Is anyone actually listening to patients here?,381466,4
+47,Linda,Jones,10007,Feeling Unheard,My health worries are not being taken seriously.,310570,1
+48,Jennifer,Davis,10010,Feeling Unheard,"I had to repeat myself multiple times, and still nothing changed.",282767,5
+49,Robert,Moore,10001,Feeling Unheard,"I keep explaining my issue, but it's like I'm talking to myself.",580908,3
+50,Robert,Brown,10002,Feeling Unheard,I told the doctor my symptoms but felt completely ignored.,405074,3
+51,Patricia,Williams,10001,Medication Problems,"This medicine caused issues, and I wasn't informed of possible side effects.",786395,3
+52,Robert,Jones,10005,Medication Problems,I had to wait days to resolve my medication issue.,812083,4
+53,Patricia,Moore,10005,Medication Problems,Why is it so complicated to get my medication?,486693,1
+54,John,Davis,10003,Medication Problems,I can't seem to get my medication refilled easily.,335130,5
+55,Mary,Williams,10002,Medication Problems,"I experienced side effects, and no one warned me about this medication.",268490,1
+56,John,Moore,10009,Medication Problems,The pharmacy said my prescription was incorrect.,399219,1
+57,Mary,Brown,10005,Medication Problems,My prescription wasn't sent to the pharmacy on time.,897119,3
+58,Elizabeth,Wilson,10003,Medication Problems,The doctor prescribed the wrong dosage.,538431,4
+59,Mary,Davis,10006,Medication Problems,Why was I prescribed medication that I'm allergic to?,200357,3
+60,John,Miller,10005,Medication Problems,I received the wrong medication from your pharmacy.,949558,5
