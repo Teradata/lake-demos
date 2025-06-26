@@ -1,0 +1,7 @@
+###############
+hostname=XXX.XXX.XXX.XXX
+username=user
+password=password
+pat=pat_value
+pem_file=path_to_pem.pem
+base_url=https://<customer>.innovationlabs.teradata.com/api/accounts/xxxxx
