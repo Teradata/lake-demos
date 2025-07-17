@@ -1,5 +1,5 @@
-teradataml>=20.0.0.5
-teradatagenai>=20.0.0.1
+teradataml==20.0.0.5
+teradatagenai:
 streamlit
 python-dotenv
 plotly
