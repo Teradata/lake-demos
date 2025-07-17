@@ -60,7 +60,7 @@ def final_response(q, p=None):
     
 
 st.session_state['eng'] = cc()    
-st.markdown('<style>' + open('style.css').read() + '</style>', unsafe_allow_html=True)
+# st.markdown('<style>' + open('style.css').read() + '</style>', unsafe_allow_html=True)
 
 
 
