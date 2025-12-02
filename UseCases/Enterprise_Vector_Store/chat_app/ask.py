@@ -29,7 +29,7 @@ def final_response(q, p=None):
         return st.session_state['vs'].ask(question = q, prompt = p)
     
 
-st.markdown('<style>' + open('style.css').read() + '</style>', unsafe_allow_html=True)
+# st.markdown('<style>' + open('style.css').read() + '</style>', unsafe_allow_html=True)
 
 # eng = cc()
 # VSM = st.session_state['VSM']

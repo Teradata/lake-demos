@@ -26,7 +26,7 @@ def final_response(q, p=None):
     else:
         return st.session_state['vs'].prepare_response(question = q, prompt = p, similarity_results=res)
     
-st.markdown('<style>' + open('style.css').read() + '</style>', unsafe_allow_html=True)
+# st.markdown('<style>' + open('style.css').read() + '</style>', unsafe_allow_html=True)
 
 
 # VSM = st.session_state['VSM']

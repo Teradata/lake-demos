@@ -1,5 +1,5 @@
 teradataml==20.0.0.5
-teradatagenai:
+teradatagenai
 streamlit
 python-dotenv
 plotly
